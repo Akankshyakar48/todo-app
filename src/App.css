@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(62, 57, 57);
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px black;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  width: 45%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(67, 67, 67);
+  background-color: rgb(30, 29, 29);
+  color: white;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  background-color: rgb(28, 157, 28);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.task-input button:hover {
+  background-color: rgb(33, 170, 33);
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.view-toggle button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(67, 67, 67);
+  color: white;
+}
+
+.view-toggle button.active {
+  background-color: rgb(64, 64, 221);
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item {
+  background-color: rgb(54, 54, 54);
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item h3 {
+  margin: 0;
+  color: white;
+}
+
+.task-item p {
+  margin: 5px 0;
+  color: rgb(199, 196, 196);
+}
+
+.task-item svg {
+  cursor: pointer;
+  margin-left: 10px;
+  color: gray;
+}
+
+.task-item svg:hover {
+  color: white;
+}
